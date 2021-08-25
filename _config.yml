@@ -1,29 +1,29 @@
 # ----
 # Site
 
-title: Frisco Template
-url: "https://brave-submarine.cloudvent.net"
-baseurl:
+title: MIPHA
+url: "https://mipha.ca"
+baseurl: 
 google_analytics_key:
 google_maps_javascript_api_key:
 disqus_shortname:
 
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
 logo: /siteicon.png
-description: App marketing template for Jekyll.
-author:
+description: .
+author: 
   name:
   email:
   twitter: # twitter username without the @ symbol
 social:
-  name: Frisco Template
+  name: MIPHA
   links:
-    - https://github.com/CloudCannon/frisco-jekyll-template
+    - https://mipha.ca
 
 # -----
 # Build
 
-timezone: Etc/UTC
+timezone: America/Vancouver
 
 permalink: pretty
 
