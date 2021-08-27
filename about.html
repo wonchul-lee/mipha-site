@@ -14,7 +14,7 @@ image1:
 	</div>
 </section>
 
-<section class="hero" style="color:darkgrey">
+<section class="hero" style="background-color:darkgrey">
 	<div class="inner-hero text-container">
 		<div class="hero-text-container">
 			<h1 class="editable">Who We Are</h1>
@@ -29,11 +29,20 @@ image1:
 		<p class="editor-link"><a href="cloudcannon:collections/_staff_members" class="btn"><strong>&#9998;</strong> Manage Staff Members</a></p>
 		<ul class="staff">
 			{% for person in site.staff_members %}
-				<li>
-					<div class="square-image" style="background-image: url({% include relative-src.html src=person.image_path %})"></div>
-					<div class="name"><a target="_blank" href="https://twitter.com/{{ person.twitter_username }}">{{ person.name }}</a></div>
-					<div class="position">{{ person.position }}</div>
-				</li>
+				{% case person.image_path %}
+				{% when "https://upload.wikimedia.org/wikipedia/commons/a/ac/Default_pfp.jpg" %}
+					<li>
+						<div class="square-image" style="background-image: url({% include relative-src.html src=person.image_path %})"></div>
+						<div class="name"><a target="_blank" href="{{ site.baseurl }}/contact/">{{ person.name }}</a></div>
+						<div class="position">{{ person.position }}</div>
+					</li>
+				{% else %}
+					<li>
+						<div class="square-image" style="background-image: url({% include relative-src.html src=person.image_path %})"></div>
+						<div class="name"><a target="_blank" href="https://www.linkedin.com/in/{{ person.twitter_username }}">{{ person.name }}</a></div>
+						<div class="position">{{ person.position }}</div>
+					</li>
+				{% endcase %}
 			{% endfor %}
 		</ul>
 	</div>
