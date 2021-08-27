@@ -1,7 +1,7 @@
 ---
-name: James Lopez
+name: Position Open - Apply Now!
 position: CFO
-image_path: https://source.unsplash.com/collection/139386/603x603?a=.png
-twitter_username: CloudCannon
+image_path: https://upload.wikimedia.org/wikipedia/commons/a/ac/Default_pfp.jpg
+twitter_username: 
 blurb: James spends his weekends watching his favourite NBA team - L.A. Clippers.
 ---
