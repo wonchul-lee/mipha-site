@@ -1,15 +1,15 @@
 left_links:
-  - name: News
-    link: /news/
+  # - name: News
+  #   link: /news/
   - name: About
     link: /about/
   - name: Contact
     link: /contact/
 right_links:
-  - name:
-    link: https://facebook.com/mipha
-    new_window: true
-    social_icon: Facebook
+  # - name:
+  #   link: https://facebook.com/mipha
+  #   new_window: true
+  #   social_icon: Facebook
   - name:
     link: https://twitter.com/mipha_official
     social_icon: Twitter
@@ -22,6 +22,6 @@ right_links:
     link: https://instagram.com/mipha
     social_icon: Instagram
     new_window: true
-  - name:
-    link: /feed.xml
-    social_icon: RSS
+  # - name:
+  #   link: /feed.xml
+  #   social_icon: RSS
