@@ -55,3 +55,20 @@ image1:
 		</ul>
 	</div>
 </section>
+
+<div class="content">
+	{% for person in site.staff_members %}
+		<section class="info" id="{{ person.name }}">
+			<div class="container flex">
+				<div class="text">
+					<h2 class="editable">{{ person.name }}</h2>
+					<h3 class="editable">{{ person.position }}</h3>
+					<p class="editable">{{ person.blurb }}</p>
+				</div>
+				<div class="image">
+					<img class="editable" src="url({% include relative-src.html src=person.image_path %})" alt="{{ person.name }}" />
+				</div>
+			</div>
+		</section>
+	{% endfor %}
+</div>
