@@ -2,7 +2,9 @@
 #   link: /news/
 - name: Company
   link: /about/
-  subgroupitems:
+  sublinks:
+  - name: About Us
+    link: /about/
   - name: Our Priciples 
     link: /principles/
   - name: Company Philosophy
