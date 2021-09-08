@@ -9,13 +9,12 @@
 		{% if link.link == page.url %}
 			{% assign class = class | append: " active" %}
 		{% endif %}
+		<a href="{% include relative-src.html src=link.link %}" class="{{ class }}" {% if link.new_window %}target="_blank"{% endif %}>{{ link.name }}</a>
 
 		{% if link.sublinks %}
 			{% for sublink in link.sublinks %}
 				<a href="{% include relative-src.html src=sublink.link %}" class="dropdown {{ class }}" {% if sublink.new_window %}target="_blank"{% endif %}>{{ sublink.name }}</a>
 			{% endfor %}
-		{% else %}
-			<a href="{% include relative-src.html src=link.link %}" class="{{ class }}" {% if link.new_window %}target="_blank"{% endif %}>{{ link.name }}</a>
 		{% endif %}
 	{% endfor %}
 </nav>
