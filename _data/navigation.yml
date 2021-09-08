@@ -1,6 +1,11 @@
 # - name: News
 #   link: /news/
-- name: About
+- name: Company
   link: /about/
+  subgroupitems:
+  - name: Our Priciples 
+    link: /principles/
+  - name: Company Philosophy
+    link: /philosophy/
 - name: Contact
   link: /contact/
