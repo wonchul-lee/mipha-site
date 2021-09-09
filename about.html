@@ -51,9 +51,9 @@ image1:
 						<div class="name"><a href="#{{ jumplink }}">{{ person.name }}</a></div>
 						<div class="position">{{ person.position }}</div>
 						{% if person.LinkedIn != "" %}
-							<a target="_blank" href="https://www.linkedin.com/in/{% include relative-src.html src=person.LinkedIn %}" class="{{ link.social_icon | slugify }}-icon">
+							<a target="_blank" href="https://www.linkedin.com/in/{{ person.LinkedIn }}" class="{{ link.social_icon | slugify }}-icon">
 								{% include social-icon.html icon=LinkedIn %}
-								{{ link.name }}
+								Test
 							</a>
 						{% endif %}
 					</li>
