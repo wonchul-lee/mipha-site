@@ -66,7 +66,7 @@ image1:
 					<p class="editable">{{ person.blurb }}</p>
 				</div>
 				<div class="image">
-					<img class="editable" src="{{ person.image_path }}" alt="{{ person.name }}" />
+					<img class="editable" src="url({% include relative-src.html src=person.image_path %})" alt="{{ person.name }}" />
 				</div>
 			</div>
 		</section>
