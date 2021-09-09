@@ -50,10 +50,10 @@ image1:
 						{% assign jumplink = person.name | remove: " " %}
 						<div class="name"><a href="#{{ jumplink }}">{{ person.name }}</a></div>
 						<div class="position">{{ person.position }}</div>
-						{% if person.LinkedIn != "" %}
+						{% if person.LinkedIn %}
 							<a target="_blank" href="https://www.linkedin.com/in/{{ person.LinkedIn }}" class="{{ link.social_icon | slugify }}-icon">
 								{% include social-icon.html icon=LinkedIn %}
-								Test
+								
 							</a>
 						{% endif %}
 					</li>
