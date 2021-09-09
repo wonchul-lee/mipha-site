@@ -47,7 +47,8 @@ image1:
 				{% else %}
 					<li>
 						<div class="square-image" style="background-image: url({% include relative-src.html src=person.image_path %})"></div>
-						<div class="name"><a href="#{{ person.name | strip }}">{{ person.name }}</a></div>
+						{% assign jumplink = person.name | remove: " " %}
+						<div class="name"><a href="#{{ jumplink }}">{{ person.name }}</a></div>
 						<div class="position">{{ person.position }}</div>
 						{% if person.LinkedIn != "" %}
 							<a target="_blank" href="https://www.linkedin.com/in/{% include relative-src.html src=person.LinkedIn %}" class="{{ link.social_icon | slugify }}-icon">
@@ -64,7 +65,8 @@ image1:
 
 <div class="content">
 	{% for person in site.staff_members %}
-		<section class="info" id="{{ person.name | strip }}">
+		{% assign jumplink = person.name | remove: " " %}
+		<section class="info" id="{{ jumplink }}">
 			<div class="container flex">
 				<div class="text">
 					<h2 class="editable">{{ person.name }}</h2>
