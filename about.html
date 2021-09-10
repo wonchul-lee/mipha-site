@@ -52,7 +52,7 @@ image1:
 						{% if person.LinkedIn %}
 							<ul class="footer-right-links">
 								<li>
-									<a target="_blank" href="https://www.linkedin.com/in/{{ person.LinkedIn }}" class="{{ LinkedIn | slugify }}-icon">
+									<a target="_blank" href="https://www.linkedin.com/in/{{ person.LinkedIn }}" class="{{ 'LinkedIn' | slugify }}-icon">
 										{% include social-icon.html icon=LinkedIn %}
 										{{ person.icon }}
 									</a>
