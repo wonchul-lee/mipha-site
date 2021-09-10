@@ -50,11 +50,13 @@ image1:
 						<div class="name"><a href="#{{ person.name | remove: ' ' }}">{{ person.name }}</a></div>
 						<div class="position">{{ person.position }}</div>
 						{% if person.LinkedIn %}
-							<li>								
-								<a target="_blank" href="https://www.linkedin.com/in/{{ person.LinkedIn }}" class="{{ LinkedIn | slugify }}-icon">
-								{% include social-icon.html icon=LinkedIn %}
-								</a>
-							</li>
+							<ul>
+								<li>
+									<a target="_blank" href="https://www.linkedin.com/in/{{ person.LinkedIn }}" class="{{ LinkedIn | slugify }}-icon">
+										{% include social-icon.html icon=LinkedIn %}
+									</a>
+								</li>								
+							</ul>
 						{% endif %}
 					</li>
 				{% endcase %}
@@ -65,8 +67,7 @@ image1:
 
 <div class="content">
 	{% for person in site.staff_members %}
-		{% assign jumplink = person.name | remove: " " %}
-		<section class="info" id="{{ jumplink }}">
+		<section class="info" id="{{ person.name | remove: ' ' }}">
 			<div class="container flex">
 				<div class="text">
 					<h2 class="editable">{{ person.name }}</h2>
