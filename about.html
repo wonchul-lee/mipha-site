@@ -50,14 +50,15 @@ image1:
 						<div class="name"><a href="#{{ person.name | remove: ' ' }}">{{ person.name }}</a></div>
 						<div class="position">{{ person.position }}</div>
 						{% if person.LinkedIn %}
-							<ul class="footer-right-links">
-								<li>
-									<a target="_blank" href="https://www.linkedin.com/in/{{ person.LinkedIn }}" class="{{ 'LinkedIn' | slugify }}-icon">
-										{% include social-icon.html icon=LinkedIn %}
-										{{ person.icon }}
-									</a>
-								</li>								
-							</ul>
+							<footer>
+								<ul class="footer-right-links">
+									<li>
+										<a target="_blank" href="https://www.linkedin.com/in/{{ person.LinkedIn }}" class="{{ 'LinkedIn' | slugify }}-icon">
+											{% include social-icon.html icon=LinkedIn %}
+										</a>
+									</li>								
+								</ul>
+							</footer>
 						{% endif %}
 					</li>
 				{% endcase %}
