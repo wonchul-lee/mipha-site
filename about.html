@@ -47,14 +47,14 @@ image1:
 				{% else %}
 					<li>
 						<div class="square-image" style="background-image: url({% include relative-src.html src=person.image_path %})"></div>
-						{% assign jumplink = person.name | remove: " " %}
-						<div class="name"><a href="#{{ jumplink }}">{{ person.name }}</a></div>
+						<div class="name"><a href="#{{ person.name | remove: ' ' }}">{{ person.name }}</a></div>
 						<div class="position">{{ person.position }}</div>
 						{% if person.LinkedIn %}
-							<a target="_blank" href="https://www.linkedin.com/in/{{ person.LinkedIn }}" class="{{ LinkedIn | slugify }}-icon">
+							<li>								
+								<a target="_blank" href="https://www.linkedin.com/in/{{ person.LinkedIn }}" class="{{ LinkedIn | slugify }}-icon">
 								{% include social-icon.html icon=LinkedIn %}
-								{{ person.icon }}
-							</a>
+								</a>
+							</li>
 						{% endif %}
 					</li>
 				{% endcase %}
