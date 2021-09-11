@@ -22,6 +22,10 @@ right_links:
     link: https://instagram.com/mipha_official
     social_icon: Instagram
     new_window: true
+  - name:
+    link: https://linkedin.com/mipha_official
+    social_icon: LinkedIn
+    new_window: true
   # - name:
   #   link: /feed.xml
   #   social_icon: RSS
