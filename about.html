@@ -53,8 +53,9 @@ image1:
 							<team>
 								<ul class="connect-links">
 									<li>
-										<a target="_blank" href="https://www.linkedin.com/in/{{ person.LinkedIn }}" class="{{ 'LinkedIn' | slugify }}-icon">
+										<a target="_blank" href="{% include relative-src.html src=link.link %}" class="{{ 'LinkedIn' | slugify }}-icon">
 											{% include social-icon.html icon=LinkedIn %}
+											{{ person.icon }}
 										</a>
 									</li>								
 								</ul>
