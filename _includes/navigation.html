@@ -13,6 +13,14 @@
 
 		{% if link.sublinks %}
 			{% for sublink in link.sublinks %}
+				{% assign class = "" %}
+				{% if link.highlight %}
+					{% assign class = class | append: " highlight" %}
+				{% endif %}
+		
+				{% if link.link == page.url %}
+					{% assign class = class | append: " active" %}
+				{% endif %}
 				<a href="{% include relative-src.html src=sublink.link %}" class="dropdown {{ class }}" {% if sublink.new_window %}target="_blank"{% endif %}>{{ sublink.name }}</a>
 			{% endfor %}
 		{% endif %}
