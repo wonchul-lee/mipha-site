@@ -10,8 +10,8 @@
 		{% endif %}
 
 		{% if link.sublinks %}
-			<a href="{% include relative-src.html src=link.link %}" class="{{ class }}" {% if link.new_window %}target="_blank"{% endif %}>{{ link.name }}</a>			
-			{% for sublink in link.sublinks %}
+			<!-- <a href="{% include relative-src.html src=link.link %}" class="{{ class }}" {% if link.new_window %}target="_blank"{% endif %}>{{ link.name }}</a>			
+			{% for sublink in link.sublinks %} -->
 				<!-- {% assign class = "" %}
 				{% if link.highlight %}
 					{% assign class = class | append: " highlight" %}
@@ -20,21 +20,21 @@
 					{% assign class = class | append: " active" %}
 				{% endif %} -->
 				<!-- <li class="dropdown {{ class }}"> -->
-                    <!-- <a href="{{ site.url }}{{ site.baseurl }}{{ link.url }}" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ link.name }} <span class="caret"></span></a> -->
-                    <!-- <ul class="dropdown-menu">
+                    <a href="{{ site.url }}{{ site.baseurl }}{{ link.url }}" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ link.name }} <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
                         {% for sublink in link.sublinks %}
                                 <li>
-                                    <a href="{{ site.url }}{{ site.baseurl }}{{ sublink.url }}">{{ sublink.title }}</a>
+                                    <a href="{{ site.url }}{{ site.baseurl }}{{ sublink.link }}">{{ sublink.name }}</a>
                                 </li>
                             {% endif %}
                         {% endfor %}
-                    </ul> -->
+                    </ul>
                 <!-- </li> -->
 		
 				<!-- {% if link.link == page.url %}
 					{% assign class = class | append: " active" %}
 				{% endif %} -->
-				<a href="{% include relative-src.html src=sublink.link %}" class="dropdown {{ class }}" {% if sublink.new_window %}target="_blank"{% endif %}>{{ sublink.name }}</a>
+				<!-- <a href="{% include relative-src.html src=sublink.link %}" class="dropdown {{ class }}" {% if sublink.new_window %}target="_blank"{% endif %}>{{ sublink.name }}</a> -->
 			{% endfor %}
 		{% else %}
 			<a href="{% include relative-src.html src=link.link %}" class="{{ class }}" {% if link.new_window %}target="_blank"{% endif %}>{{ link.name }}</a>
