@@ -1,6 +1,7 @@
 # - name: News
 #   link: /news/
 - name: Company
+  link: /about/
   sublinks:
   - name: About Us
     link: /about/
