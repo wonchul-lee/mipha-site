@@ -9,7 +9,7 @@
 			{% assign class = class | append: " active" %}
 		{% endif %}
 
-		{% if link.sublinks %}
+		{% if defined?(link.sublinks) %}
 			<!-- <a href="{% include relative-src.html src=link.link %}" class="{{ class }}" {% if link.new_window %}target="_blank"{% endif %}>{{ link.name }}</a>			
 			{% for sublink in link.sublinks %} -->
 				<!-- {% assign class = "" %}
@@ -40,4 +40,5 @@
 			<a href="{% include relative-src.html src=link.link %}" class="{{ class }}" {% if link.new_window %}target="_blank"{% endif %}>{{ link.name }}</a>
 		{% endif %}
 	{% endfor %}
+	
 </nav>
