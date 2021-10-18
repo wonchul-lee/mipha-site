@@ -19,7 +19,7 @@
 				{% if link.link == page.url %}
 					{% assign class = class | append: " active" %}
 				{% endif %} -->
-				<li class="dropdown {{ class }}">
+				<li class="{{ class }}">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ link.name }} <span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         {% for sublink in link.sublinks %}
