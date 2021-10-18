@@ -9,7 +9,7 @@
 			{% assign class = class | append: " active" %}
 		{% endif %}
 
-		{% if defined?(link.sublinks) %}
+		{% if link.sublinks %}
 			<!-- <a href="{% include relative-src.html src=link.link %}" class="{{ class }}" {% if link.new_window %}target="_blank"{% endif %}>{{ link.name }}</a>			
 			{% for sublink in link.sublinks %} -->
 				<!-- {% assign class = "" %}
@@ -26,7 +26,6 @@
                                 <li>
                                     <a href="{{ site.url }}{{ sublink.link }}">{{ sublink.name }}</a>
                                 </li>
-                            {% endif %}
                         {% endfor %}
                     </ul>
                 <!-- </li> -->
