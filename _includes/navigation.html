@@ -25,7 +25,7 @@
                         {% for sublink in link.sublinks %}
 							<li>
 								<!-- <a href="{{ site.url }}{{ sublink.link }}">{{ sublink.name }}</a> -->
-								<a href="{% include relative-src.html src=sublink.link %}" class="{{ class }}" {% if link.new_window %}target="_blank"{% endif %}>{{ sublink.name }}</a>
+								<a href="{% include relative-src.html src=sublink.link %}">{{ sublink.name }}</a>
 							</li>
                         {% endfor %}
                     </ul>
