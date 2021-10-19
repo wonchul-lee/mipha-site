@@ -12,7 +12,7 @@
 		{% if link.sublinks %}
 			<!-- <a href="{% include relative-src.html src=link.link %}" class="{{ class }}" {% if link.new_window %}target="_blank"{% endif %}>{{ link.name }}</a>			
 			{% for sublink in link.sublinks %} -->
-			<li class="dropdown {{ class }}">
+			<!-- <li class="dropdown {{ class }}"> -->
 				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ link.name }} <span class="caret"></span></a>
 				<ul class="dropdown-menu">
 					{% for sublink in link.sublinks %}
@@ -22,7 +22,7 @@
 						</li>
 					{% endfor %}
 				</ul>
-			</li>
+			<!-- </li> -->
 		
 				<!-- {% if link.link == page.url %}
 					{% assign class = class | append: " active" %}
