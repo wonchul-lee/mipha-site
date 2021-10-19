@@ -24,7 +24,7 @@
                     <ul class="dropdown-menu">
                         {% for sublink in link.sublinks %}
 							{% if sublink.link == page.url %}
-								{% assign class = class | append: " active" %}
+								{% assign link.class = class | append: " active" %}
 							{% endif %}
 							<li>
 								<!-- <a href="{{ site.url }}{{ sublink.link }}">{{ sublink.name }}</a> -->
