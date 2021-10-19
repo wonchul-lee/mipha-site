@@ -3,11 +3,11 @@
 - name: Company
   # link: /about/
   sublinks:
-  - name: About Us
-    link: /about/
-  - name: Our Priciples 
-    link: /principles/
-  - name: Company Philosophy
-    link: /philosophy/
+    - name: About Us
+      link: /about/
+    - name: Our Priciples 
+      link: /principles/
+    - name: Company Philosophy
+      link: /philosophy/
 - name: Contact
   link: /contact/
