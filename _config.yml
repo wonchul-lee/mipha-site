@@ -30,8 +30,7 @@ permalink: pretty
 plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
-  - jekyll-feed
-  - jekyll-paginate
+  # - jekyll-paginate
   - jekyll-archives
 
 exclude:
@@ -40,13 +39,22 @@ exclude:
   - README.md
   - LICENCE
 
+collections_dir: collections
+
 collections:
+  pages:
+    name: 'Pages'
+    _icon: 'web'
+    _singular_name: 'Page'
+    _slug: 'pages'
+    output: true
+    permalink: /:title/
   staff_members:
     _hide_content: true
     _icon: account_circle
 
-paginate: 10
-paginate_path: "/news/:num/"
+# paginate: 10
+# paginate_path: "_pages/news/:num/"
 
 jekyll-archives:
   enabled: ['categories']
@@ -55,18 +63,24 @@ defaults:
   -
     scope:
       path: ""
-      type: "staff_members"
+    values:
+      layout: default
+  - 
+    scope:
+      type: pages
+      path: _pages/index.html
+    values:
+      permalink: /
+  -
+    scope:
+      path: ""
+      type: staff_members
     values:
       _options:
         image_path:
           width: 440
           height: 440
-          uploads_dir: "/images/staff_members"
-  -
-    scope:
-      path: ""
-    values:
-      layout: "default"
+          uploads_dir: /images/staff_members
   -
     scope:
       type: "posts"
@@ -84,7 +98,7 @@ defaults:
           uploads_dir: "/images/post_uploads"
   -
     scope:
-      path: "contact-success.html"
+      path: contact-success.html
     values:
       layout: "page"
   -
@@ -100,22 +114,3 @@ defaults:
         width: 2000
         height: 1322
         resize_style: cover
-
-# -----------
-# CloudCannon
-
-social_icons:
-  - Facebook
-  - Google Plus
-  - Instagram
-  - LinkedIn
-  - Pinterest
-  - Tumblr
-  - Twitter
-  - YouTube
-  - Email
-  - RSS
-
-_comments:
-  description: Text shown when sharing on social media
-  blurb: Short bio or description of this person
