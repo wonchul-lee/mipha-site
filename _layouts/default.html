@@ -9,11 +9,10 @@
 			<div class="container">
 				<div class="company-name">
 					<a href="/">
-						<span class="dark-logo"><img width="104" height="38" src="/images/logo/dark.svg" alt="dark frisco logo"></span>
-						<span class="light-logo"><img width="104" height="38" src="/images/logo/light.svg" alt="light frisco logo"></span>
+						<span class="dark-logo"><img width="104" height="38" src="/images/logo/dark.svg" alt="dark logo"></span>
+						<span class="light-logo"><img width="104" height="38" src="/images/logo/light.svg" alt="light logo"></span>
 					</a>
 				</div>
-				{% include navigation.html %}
 			</div>
 		</header>
 
@@ -21,16 +20,6 @@
 
 		<footer>
 			<div class="container">
-				<ul class="footer-left-links">
-					{% for link in site.data.footer.left_links %}
-						<li>
-							<a {% if link.new_window %}target="_blank"{% endif %} href="{% include relative-src.html src=link.link %}" {% if link.social_icon %}class="{{ link.social_icon | slugify }}-icon"{% endif %}>
-								{% if link.social_icon %}{% include social-icon.html icon=link.social_icon %}{% endif %}
-								{{ link.name }}
-							</a>
-						</li>
-					{% endfor %}
-				</ul>
 				<ul class="footer-right-links">
 					{% for link in site.data.footer.right_links %}
 						<li>
@@ -44,7 +33,7 @@
 				
 				<p class="copyright">
 					<a href="https://mipha.ca/">
-						MIPHA Enterprises 2021
+						MIPHA ENTERPRISES LTD. 2021
 					</a>
 				</p>
 			</div>
