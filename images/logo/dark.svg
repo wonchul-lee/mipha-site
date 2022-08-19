@@ -8,9 +8,9 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    fill="#231F20"
-   width="111.539"
+   width="86.539001"
    height="38.044998"
-   viewBox="76.5 72.205 111.539 38.045"
+   viewBox="76.5 72.205 86.539 38.045"
    version="1.1"
    id="svg46"
    sodipodi:docname="dark.svg"
@@ -42,13 +42,14 @@
      inkscape:window-height="1017"
      id="namedview48"
      showgrid="false"
-     inkscape:zoom="5.2444006"
-     inkscape:cx="44.693307"
-     inkscape:cy="35.912195"
+     inkscape:zoom="7.4167025"
+     inkscape:cx="54.82808"
+     inkscape:cy="25.944125"
      inkscape:window-x="1912"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:current-layer="text56" />
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0" />
   <g
      inkscape:groupmode="layer"
      id="layer1"
@@ -56,7 +57,8 @@
     <g
        aria-label="Miphα"
        id="text56"
-       style="font-size:31.2067px;line-height:1.25;font-family:'Noto Sans JP';-inkscape-font-specification:'Noto Sans JP';stroke-width:0.780168">
+       style="font-size:31.2067px;line-height:1.25;font-family:'Noto Sans JP';-inkscape-font-specification:'Noto Sans JP';stroke-width:0.780168"
+       transform="translate(-24)">
       <path
          d="m 103.81723,101.49162 h 2.62137 V 88.821703 c 0,-1.966022 -0.21845,-4.743418 -0.34328,-6.740647 h 0.12483 l 1.80999,5.211519 4.33773,11.889752 h 1.93481 l 4.33774,-11.889752 1.80998,-5.211519 h 0.12483 c -0.15603,1.997229 -0.37448,4.774625 -0.37448,6.740647 v 12.669917 h 2.71498 V 78.585906 h -3.49515 l -4.36893,12.264232 c -0.53052,1.591542 -1.02983,3.183084 -1.56034,4.774625 h -0.15603 c -0.56172,-1.591541 -1.09224,-3.183083 -1.62275,-4.774625 l -4.40015,-12.264232 h -3.49515 z"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Noto Sans JP';-inkscape-font-specification:'Noto Sans JP';stroke-width:0.780168"
@@ -79,7 +81,4 @@
          id="path74" />
     </g>
   </g>
-  <path
-     d="m 80.5,96.834 h 2 v -12 h -2 z m 4,4 h 2 v -20 h -2 z m -8,-8 h 2 v -4 h -2 z m 12,4 h 2 v -12 h -2 z m 4,-8 v 4 h 2 v -4 z"
-     id="path44" />
 </svg>
